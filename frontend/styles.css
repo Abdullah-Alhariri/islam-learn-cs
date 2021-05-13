@@ -7,25 +7,55 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  all: unset;
+}
+/* MAIN ----*/
+.main {
+  margin-left: 8rem;
+  margin-top: 4rem;
+  text-shadow: 0 3px 48px black;
+}
 .main-title {
   color: #fff;
   font-family: "Merriweather", serif;
   font-weight: 900;
   font-style: italic;
-  font-size: 119px;
-  margin-left: 140px;
-  margin-top: 125px;
+  font-size: 7rem;
 }
 .main-title-span {
   color: rgba(255, 255, 255, 0.27);
 }
-
 .main-paragraph {
   color: #fff;
   font-family: "Merriweather", serif;
-  font-weight: lighter;
+  font-weight: bold;
   font-style: italic;
-  font-size: 25px;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
 
-  line-height: 1.34;
+/* SECONDARY ----*/
+.secondary {
+  color: #fe7f00;
+  font-family: Roboto, sans-serif, "Merriweather", serif;
+  text-shadow: 0 3px 48px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+}
+.secondary-h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.secondary-countdown {
+  font-size: 10rem;
+  font-weight: black;
+  cursor: default;
 }
