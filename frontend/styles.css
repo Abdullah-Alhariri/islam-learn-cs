@@ -14,48 +14,60 @@ html {
 a {
   all: unset;
 }
-/* MAIN ----*/
-.main {
-  margin-left: 8rem;
-  margin-top: 4rem;
-  text-shadow: 0 3px 48px black;
-}
-.main-title {
-  color: #fff;
-  font-family: "Merriweather", serif;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 7rem;
-}
-.main-title-span {
-  color: rgba(255, 255, 255, 0.27);
-}
-.main-paragraph {
-  color: #fff;
-  font-family: "Merriweather", serif;
-  font-weight: bold;
-  font-style: italic;
-  font-size: 1.3rem;
-  line-height: 1.4;
-}
 
-/* SECONDARY ----*/
-.secondary {
-  color: #fe7f00;
-  font-family: Roboto, sans-serif, "Merriweather", serif;
-  text-shadow: 0 3px 48px black;
+/* primary-section ----*/
+.primary-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 7rem;
+  justify-content: center;
+  min-height: 95vh;
+  max-height: 95vh;
+
+  color: #fe7f00;
+  font-family: Roboto, sans-serif, "Merriweather", serif;
+  text-shadow: 0 3px 48px black;
 }
-.secondary-h3 {
+.primary-section-h3 {
   font-weight: bold;
   font-size: 2rem;
 }
 
-.secondary-countdown {
+.primary-section-countdown {
   font-size: 10rem;
   font-weight: black;
   cursor: default;
 }
+
+/*Footer ----*/
+.primary-footer {
+  min-height: 5vh;
+  max-height: 5vh;
+
+  background-color: rgba(0, 0, 0, 0.27);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.primary-footer-ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  min-height: 5vh;
+  align-items: center;
+
+  margin: auto;
+  max-width: 30vh;
+  min-width: 20vh;
+}
+.svg {
+  fill: rgba(255, 255, 255, 0.27);
+  max-height: 3vh;
+  max-width: 3vh;
+  vertical-align: middle;
+
+  transition: all 0.4s;
+}
+.svg:hover {
+  fill: white;
+}
+
+/*media query's ----*/
