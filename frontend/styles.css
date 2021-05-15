@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,900&display=swap");
+
 html {
   min-height: 100%;
   background-image: url(./img/islam-learn-bg.jpg);
@@ -14,13 +15,11 @@ html {
 a {
   all: unset;
 }
+
 /* variables ----*/
 :root {
   --primary-h1: 10rem;
   --primary-h3: 2rem;
-
-  --primary-height: 93vh;
-  --footer-height: 7vh;
 }
 
 /* primary-section ----*/
@@ -29,9 +28,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: var(--primary-height);
-  max-height: var(--primary-height);
-
+  min-height: 93vh;
   color: #fe7f00;
   font-family: Roboto, sans-serif, "Merriweather", serif;
   text-shadow: 0 3px 48px #000;
@@ -41,7 +38,6 @@ a {
   font-size: var(--primary-h3);
   transition: font-size 0.4s;
 }
-
 .primary-section-countdown {
   font-size: var(--primary-h1);
   cursor: default;
@@ -50,9 +46,6 @@ a {
 
 /*Footer ----*/
 .primary-footer {
-  min-height: var(--footer-height);
-  max-height: var(--footer-height);
-
   background-color: rgba(0, 0, 0, 0.27);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
@@ -60,19 +53,16 @@ a {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  min-height: var(--footer-height);
+  min-height: 7vh;
   align-items: center;
-
   margin: auto;
   max-width: 30vh;
-  min-width: 20vh;
 }
 .svg {
   fill: rgba(255, 255, 255, 0.27);
   max-height: 4vh;
   max-width: 4vh;
   vertical-align: middle;
-
   transition: fill 0.4s;
 }
 .svg:hover {
@@ -80,14 +70,12 @@ a {
 }
 
 /*media query's ----*/
-
 @media only screen and (max-width: 1400px) {
   :root {
     --primary-h1: 9rem;
     --primary-h3: 1.8rem;
   }
 }
-
 @media only screen and (max-width: 1200px) {
   :root {
     --primary-h1: 8rem;
@@ -110,7 +98,5 @@ a {
   :root {
     --primary-h1: 3rem;
     --primary-h3: 1rem;
-    --primary-height: 93vh;
-    --footer-height: 7vh;
   }
 }
