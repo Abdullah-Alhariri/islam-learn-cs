@@ -14,6 +14,14 @@ html {
 a {
   all: unset;
 }
+/* variables ----*/
+:root {
+  --primary-h1: 10rem;
+  --primary-h3: 2rem;
+
+  --primary-height: 93vh;
+  --footer-height: 7vh;
+}
 
 /* primary-section ----*/
 .primary-section {
@@ -21,28 +29,29 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 95vh;
-  max-height: 95vh;
+  min-height: var(--primary-height);
+  max-height: var(--primary-height);
 
   color: #fe7f00;
   font-family: Roboto, sans-serif, "Merriweather", serif;
-  text-shadow: 0 3px 48px black;
+  text-shadow: 0 3px 48px #000;
 }
 .primary-section-h3 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: var(--primary-h3);
+  transition: font-size 0.4s;
 }
 
 .primary-section-countdown {
-  font-size: 10rem;
-  font-weight: black;
+  font-size: var(--primary-h1);
   cursor: default;
+  transition: font-size 0.4s;
 }
 
 /*Footer ----*/
 .primary-footer {
-  min-height: 5vh;
-  max-height: 5vh;
+  min-height: var(--footer-height);
+  max-height: var(--footer-height);
 
   background-color: rgba(0, 0, 0, 0.27);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -51,7 +60,7 @@ a {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  min-height: 5vh;
+  min-height: var(--footer-height);
   align-items: center;
 
   margin: auto;
@@ -60,14 +69,48 @@ a {
 }
 .svg {
   fill: rgba(255, 255, 255, 0.27);
-  max-height: 3vh;
-  max-width: 3vh;
+  max-height: 4vh;
+  max-width: 4vh;
   vertical-align: middle;
 
-  transition: all 0.4s;
+  transition: fill 0.4s;
 }
 .svg:hover {
   fill: white;
 }
 
 /*media query's ----*/
+
+@media only screen and (max-width: 1400px) {
+  :root {
+    --primary-h1: 9rem;
+    --primary-h3: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  :root {
+    --primary-h1: 8rem;
+    --primary-h3: 1.6rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  :root {
+    --primary-h1: 6rem;
+    --primary-h3: 1.2rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  :root {
+    --primary-h1: 4rem;
+    --primary-h3: 1rem;
+  }
+}
+@media only screen and (max-width: 520px) {
+  :root {
+    --primary-h1: 3rem;
+    --primary-h3: 1rem;
+    --primary-height: 93vh;
+    --footer-height: 7vh;
+  }
+}
