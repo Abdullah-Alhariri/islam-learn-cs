@@ -3,7 +3,7 @@
 
 html {
   min-height: 100%;
-  background-image: url(./img/islam-learn-bg.jpg);
+  background-image: url("./img/islam-learn-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
