@@ -1,7 +1,7 @@
 "use strict";
 
 var countdown = function countdown() {
-  var countDate = new Date("September 28, 2021 00:00:00").getTime();
+  var countDate = new Date("October 1, 2021 00:00:00").getTime();
   var now = new Date().getTime();
   var gap = countDate - now;
   var second = 1000;
